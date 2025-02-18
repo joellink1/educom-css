@@ -1,3 +1,55 @@
+/* at the top of the file */
+:root {
+    /* FONTS */
+    --regular: "Arial";
+
+    /* COLORS */
+    --dark-brown: #402214;
+    --lighter-brown: #774231;
+    --lightest-brown: #aa4b1b;
+
+    --darker-red: #b31714;
+    --lighter-red: #dc3439;
+
+    --white: #FFF;
+    --black: #000;
+
+    /* FONT SIZES */
+    --small: 8px;
+    --medium: 16px;
+    --large: 24px;
+    --wumbo: 32px;
+}
+
+/* usage */
+
+h1 {
+    font-family: var(--regular);
+    color: var(--darker-red)
+}
+
+h2 {
+    font-size: var(--wumbo);
+    color: var(black)
+}
+
+h3 {
+    font-size: --large;
+    color: var(--dark-brown)
+}
+
+h4 {
+    font-size: var(--medium);
+    color: var(--lighter-brown)
+}
+
+h5 {
+    font-size: var(--small);
+    color: var(--lightest-brown)
+}
+
+
+
 .red-square{
     width: 80px;
     height: 80px;
@@ -88,3 +140,4 @@ a:hover{
 a:active{
     color: blue
 }
+

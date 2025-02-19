@@ -6,14 +6,14 @@ html, body {
 
 .navigation {
     Width: 100%;
-    background-color: #1d7188;
-    color: #FFF;
+    background-color: #FFF;
+    color: #000;
     padding: 40px
 }
 
 .content { 
     display: flex;
-    background-color: #FF0;
+    background-color: #FFF;
     padding: 30px;
     justify-content: center;
     align-items: center;
@@ -22,25 +22,64 @@ html, body {
 }
 
 .block {
+    font-weight: bolder;
+    color: #FFF;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     width: 31%;
-    display: inline-block;
-    background-color: #F00;
-    height: 150px;
     margin: 5px;
+    display: inline-block;
+    height: 150px;
     border: 10px solid transparent;
     border-radius: 5%;
     transition: all 0.3s ease;
+    text-align: center;
+    line-height: 150px;
 }
+
+.romeblock{
+    background: url(rome.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bruxellesblock{
+    background: url(bruxelles.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.newyorkblock{
+    background: url(newyork.jpg) no-repeat center;
+    background-size: cover;
+}
+
 
 .block:hover {
     border: 5px solid transparent;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transform: scale(105%);
+    -webkit-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .footer {
-    background-color: #000;
+    background-color: #c9bc8e;
     color: #FFF;
-    padding: 40px
+    padding: 40px;
+    display: inline-block;
+    width: 100%;
+}
+
+.labels {
+    display: inline-block;
+}
+
+.menu {
+    position: fixed;
+    right: 30px
+}
+
+.right {
+    position: fixed;
+    right: 30px
 }
